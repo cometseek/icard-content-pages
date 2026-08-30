@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "art",
+  "version": 1,
+  "categoryID": "aesthetics",
+  "title": "艺术入门",
+  "subtitle": "学会观察画面中的选择",
+  "symbol": "paintpalette.fill",
+  "accentHex": "9C5145",
+  "softHex": "F3E2DE",
+  "cards": [
+    {
+      "body": "画家通过主体位置、线条方向、大小和留白组织画面。构图会影响观者先看哪里，以及视线如何移动。",
+      "id": "art-1",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "看画时，可以先追踪自己的第一眼。",
+      "title": "构图在安排注意力",
+      "topicID": "art"
+    },
+    {
+      "body": "较亮与较暗的区域并置，会让平面上的形状显得有厚度和空间。明暗也能制造安静、紧张或戏剧性的气氛。",
+      "id": "art-2",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "光影既描述物体，也表达情绪。",
+      "title": "明暗塑造体积",
+      "topicID": "art"
+    },
+    {
+      "body": "色环上相对的颜色常被称为互补色。它们并置时对比鲜明，降低饱和度混合后则可能趋向中性。",
+      "id": "art-3",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "颜色关系往往比单个颜色更重要。",
+      "title": "互补色为什么醒目",
+      "topicID": "art"
+    },
+    {
+      "body": "画面中没有被主体占据的区域叫负空间。它能帮助主体呼吸，也能形成节奏、方向与隐含形状。",
+      "id": "art-4",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "空白同样是创作者主动做出的选择。",
+      "title": "留白不是没有内容",
+      "topicID": "art"
+    },
+    {
+      "body": "线性透视让平行线在画面深处趋向消失点，并让远处物体显得更小，从而在平面上建立纵深。",
+      "id": "art-5",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "透视是一套视觉约定，不是唯一的空间表达。",
+      "title": "透视在制造空间错觉",
+      "topicID": "art"
+    },
+    {
+      "body": "形状、颜色或线条有规律地再次出现，会像音乐中的拍子一样引导视线；变化则能打破机械感。",
+      "id": "art-6",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "节奏来自重复，也来自重复中的差异。",
+      "title": "重复会形成节奏",
+      "topicID": "art"
+    },
+    {
+      "body": "作品可以保留材料真实的粗糙与光滑，也可以用笔触制造看似有触感的表面。",
+      "id": "art-7",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "视觉有时会唤起触觉经验。",
+      "title": "肌理既能看也能想象",
+      "topicID": "art"
+    },
+    {
+      "body": "同一个形象被做得极大或极小时，观者与它的身体关系、注意方式和情绪感受都会变化。",
+      "id": "art-8",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "大小不仅是尺寸，也是一种表达。",
+      "title": "尺度会改变观看关系",
+      "topicID": "art"
+    },
+    {
+      "body": "抽象作品可能简化、重组或舍弃可识别对象，把注意力转向颜色、形状、材料和动作本身。",
+      "id": "art-9",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "看不出对象时，可以先观察形式关系。",
+      "title": "抽象不是随意画",
+      "topicID": "art"
+    },
+    {
+      "body": "油画、摄影、版画和数字图像拥有不同的制作过程与限制。艺术家选择媒介，也是在选择作品如何被感知。",
+      "id": "art-10",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "材料不是内容之外的包装。",
+      "title": "媒介会参与表达",
+      "topicID": "art"
+    },
+    {
+      "body": "画面两侧即使形状不同，也能通过大小、明暗和密度取得视觉上的稳定，这称为非对称平衡。",
+      "id": "art-11",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "稳定感可以来自等量，也可以来自等势。",
+      "title": "平衡不必完全对称",
+      "topicID": "art"
+    },
+    {
+      "body": "作品最初出现的地点、用途和观众，可能与今天的美术馆环境不同。理解语境会改变我们对它的解读。",
+      "id": "art-12",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "作品不只属于画面，也属于它所处的时代。",
+      "title": "作品也有观看语境",
+      "topicID": "art"
+    }
+  ]
+}

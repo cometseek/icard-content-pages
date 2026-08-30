@@ -1,0 +1,48 @@
+[
+  {
+    "id": "technology",
+    "title": "科技与未来",
+    "subtitle": "看懂正在改变生活的新技术",
+    "order": 0,
+    "packIDs": [
+      "ai"
+    ]
+  },
+  {
+    "id": "world",
+    "title": "世界与文明",
+    "subtitle": "连接历史、地理与今天",
+    "order": 1,
+    "packIDs": [
+      "history"
+    ]
+  },
+  {
+    "id": "science",
+    "title": "科学与自然",
+    "subtitle": "理解宇宙、地球和日常现象",
+    "order": 2,
+    "packIDs": [
+      "science",
+      "space"
+    ]
+  },
+  {
+    "id": "thinking",
+    "title": "思维与生活",
+    "subtitle": "用知识做出更清醒的判断",
+    "order": 3,
+    "packIDs": [
+      "economics"
+    ]
+  },
+  {
+    "id": "aesthetics",
+    "title": "艺术与审美",
+    "subtitle": "学会观看作品与生活",
+    "order": 4,
+    "packIDs": [
+      "art"
+    ]
+  }
+]

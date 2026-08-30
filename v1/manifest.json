@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "publishedAt": "2026-08-30T15:00:00Z",
+  "categoriesURL": "categories.json",
+  "packs": [
+    {
+      "id": "ai",
+      "version": 1,
+      "categoryID": "technology",
+      "title": "人工智能",
+      "cardCount": 12,
+      "url": "packs/ai/1.json",
+      "checksum": "f9ef8b2184f89f0e331fa614576249b05ff9302b69d9a18f536649e1977457aa"
+    },
+    {
+      "id": "art",
+      "version": 1,
+      "categoryID": "aesthetics",
+      "title": "艺术入门",
+      "cardCount": 12,
+      "url": "packs/art/1.json",
+      "checksum": "a6aac647938de34354093e6f7c48d7c620add72385232ccd3d5363083328fc21"
+    },
+    {
+      "id": "economics",
+      "version": 1,
+      "categoryID": "thinking",
+      "title": "经济常识",
+      "cardCount": 12,
+      "url": "packs/economics/1.json",
+      "checksum": "bc7f31e1ba95f025c9d6461a62ee240134664c3cca2a3f46f098656b1e8e7dff"
+    },
+    {
+      "id": "history",
+      "version": 1,
+      "categoryID": "world",
+      "title": "世界与历史",
+      "cardCount": 12,
+      "url": "packs/history/1.json",
+      "checksum": "2c816a157588b3bb13dbde12999eedec6cb7609fab320ecb4a5c75e11deca041"
+    },
+    {
+      "id": "science",
+      "version": 1,
+      "categoryID": "science",
+      "title": "生活科学",
+      "cardCount": 12,
+      "url": "packs/science/1.json",
+      "checksum": "83f304ccdfe9da98a6059cb7e64d9728ce4f8bab17636988f1b55f908c8c9ee3"
+    },
+    {
+      "id": "space",
+      "version": 1,
+      "categoryID": "science",
+      "title": "宇宙与地球",
+      "cardCount": 12,
+      "url": "packs/space/1.json",
+      "checksum": "fc51b856848e858200418cf85ea7985dcc680cef0f4d2816f0ef9af920e51a6c"
+    }
+  ]
+}

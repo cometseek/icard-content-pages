@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "economics",
+  "version": 1,
+  "categoryID": "thinking",
+  "title": "经济常识",
+  "subtitle": "理解选择、价格与风险",
+  "symbol": "chart.line.uptrend.xyaxis",
+  "accentHex": "366E64",
+  "softHex": "DDEDE8",
+  "cards": [
+    {
+      "body": "当时间或资源有限，选择一个方案通常意味着放弃另一个方案。被放弃选项中价值最高的那个，就是机会成本。",
+      "id": "economics-1",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "金融消费者教育资料",
+        "url": "https://www.pbc.gov.cn/"
+      },
+      "takeaway": "真正的成本不只体现在付款金额。",
+      "title": "每个选择都有机会成本",
+      "topicID": "economics"
+    },
+    {
+      "body": "当整体价格水平持续上升，同样数量的钱通常能买到的商品和服务会减少。这意味着货币的实际购买力下降。",
+      "id": "economics-2",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "金融消费者教育资料",
+        "url": "https://www.pbc.gov.cn/"
+      },
+      "takeaway": "比较长期金额时，也要考虑价格变化。",
+      "title": "通货膨胀影响购买力",
+      "topicID": "economics"
+    },
+    {
+      "body": "收益如果继续参与后续计算，就会产生复利。时间越长，早期小差异可能累积成明显差距。",
+      "id": "economics-3",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "金融消费者教育资料",
+        "url": "https://www.pbc.gov.cn/"
+      },
+      "takeaway": "复利放大收益，也可能放大债务成本。",
+      "title": "复利会积累时间的力量",
+      "topicID": "economics"
+    },
+    {
+      "body": "把资源分散在相关性较低的不同资产上，可以减少单一事件造成的影响，但无法消除所有市场风险。",
+      "id": "economics-4",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "金融消费者教育资料",
+        "url": "https://www.pbc.gov.cn/"
+      },
+      "takeaway": "分散的目标是管理风险，不是保证收益。",
+      "title": "分散不等于没有风险",
+      "topicID": "economics"
+    },
+    {
+      "body": "账户金额增加是名义变化；扣除通货膨胀后，购买力真正增加多少才更接近实际收益。",
+      "id": "economics-5",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "金融消费者教育资料",
+        "url": "https://www.pbc.gov.cn/"
+      },
+      "takeaway": "衡量长期结果，要看购买力而不只看数字。",
+      "title": "名义收益不等于实际收益",
+      "topicID": "economics"
+    },
+    {
+      "body": "有些资产可能有收益，却不能在需要时快速、低成本地变成可用资金。流动性描述的正是这种便利程度。",
+      "id": "economics-6",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "金融消费者教育资料",
+        "url": "https://www.pbc.gov.cn/"
+      },
+      "takeaway": "能否及时使用，也属于资产的重要特征。",
+      "title": "流动性也是一种价值",
+      "topicID": "economics"
+    },
+    {
+      "body": "利率既可能是储蓄得到的回报，也可能是借款需要支付的价格。期限、风险和市场条件都会影响它。",
+      "id": "economics-7",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "金融消费者教育资料",
+        "url": "https://www.pbc.gov.cn/"
+      },
+      "takeaway": "看到利率时，先分清自己是收取还是支付。",
+      "title": "利率连接储蓄与借款",
+      "topicID": "economics"
+    },
+    {
+      "body": "按时还款、负债水平和账户使用情况会逐渐形成信用记录。一次选择可能影响未来获得金融服务的条件。",
+      "id": "economics-8",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "金融消费者教育资料",
+        "url": "https://www.pbc.gov.cn/"
+      },
+      "takeaway": "信用是一段行为历史，不是一张永久标签。",
+      "title": "信用记录来自长期行为",
+      "topicID": "economics"
+    },
+    {
+      "body": "预算不是简单限制消费，而是先把有限收入分配给必要支出、储蓄和可选目标，减少临时决定的压力。",
+      "id": "economics-9",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "金融消费者教育资料",
+        "url": "https://www.pbc.gov.cn/"
+      },
+      "takeaway": "先分配，再消费，能让优先级更清楚。",
+      "title": "预算是在提前做选择",
+      "topicID": "economics"
+    },
+    {
+      "body": "为意外支出保留易取用资金，可以减少突发情况发生时高成本借款或被迫出售资产的概率。",
+      "id": "economics-10",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "金融消费者教育资料",
+        "url": "https://www.pbc.gov.cn/"
+      },
+      "takeaway": "缓冲的价值，是让人有时间选择。",
+      "title": "应急资金换来缓冲时间",
+      "topicID": "economics"
+    },
+    {
+      "body": "通常，更高的潜在收益伴随更大的不确定性。只强调回报、回避风险来源的宣传值得警惕。",
+      "id": "economics-11",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "金融消费者教育资料",
+        "url": "https://www.pbc.gov.cn/"
+      },
+      "takeaway": "没有风险说明的高收益故事并不完整。",
+      "title": "收益承诺要和风险一起看",
+      "topicID": "economics"
+    },
+    {
+      "body": "冒充机构、制造紧迫感和索要验证码是常见诈骗信号。通过官方渠道独立核实，比顺着对方提供的联系方式更安全。",
+      "id": "economics-12",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "金融消费者教育资料",
+        "url": "https://www.pbc.gov.cn/"
+      },
+      "takeaway": "越催你立刻行动，越要暂停核实。",
+      "title": "先核实再转账",
+      "topicID": "economics"
+    }
+  ]
+}

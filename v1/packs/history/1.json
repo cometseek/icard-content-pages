@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "history",
+  "version": 1,
+  "categoryID": "world",
+  "title": "世界与历史",
+  "subtitle": "用关键线索连接过去与今天",
+  "symbol": "building.columns.fill",
+  "accentHex": "945038",
+  "softHex": "F2E4DC",
+  "cards": [
+    {
+      "body": "秦完成统一后，还推行统一文字、货币、度量衡和车轨等措施。这些共同标准降低了不同地区交流与治理的成本。",
+      "id": "history-1",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "共同规则能把广阔地区连接成更紧密的整体。",
+      "title": "统一不仅是疆域",
+      "topicID": "history"
+    },
+    {
+      "body": "古代丝绸之路由许多不断变化的陆路和海路组成。商人、使者与旅人让商品、技术和观念在不同地区之间流动。",
+      "id": "history-2",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "道路的价值不仅在运输，也在交换知识。",
+      "title": "丝绸之路不是一条直线",
+      "topicID": "history"
+    },
+    {
+      "body": "隋唐大运河沟通多个水系，推动粮食、物资和人员在南北之间运输，也改变了沿线城市的发展。",
+      "id": "history-3",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "大型交通工程会重新组织区域之间的关系。",
+      "title": "大运河连接了什么",
+      "topicID": "history"
+    },
+    {
+      "body": "活字印刷把单个字模组合成版，印完后还可以拆开重复使用。它与雕版印刷长期并存，共同推动了文字传播。",
+      "id": "history-4",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "技术创新往往不是立刻取代旧方法。",
+      "title": "印刷如何改变传播",
+      "topicID": "history"
+    },
+    {
+      "body": "秦在全国推行郡县制，地方主要官员由中央任免。与世袭分封相比，它加强了中央对地方的直接管理。",
+      "id": "history-5",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "行政制度会影响权力如何传递。",
+      "title": "郡县制改变了地方治理",
+      "topicID": "history"
+    },
+    {
+      "body": "纸张逐渐改进并推广后，比笨重的简牍更便于携带和书写，为典籍保存与知识传播提供了新条件。",
+      "id": "history-6",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "传播媒介的成本，会影响谁能接触知识。",
+      "title": "造纸术降低了书写成本",
+      "topicID": "history"
+    },
+    {
+      "body": "隋唐以后，科举通过考试选拔官员，虽然仍受时代条件限制，却让出身之外的学习与考试成为重要路径。",
+      "id": "history-7",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "制度变化常常是扩大机会，而非立刻实现平等。",
+      "title": "科举扩大了选官来源",
+      "topicID": "history"
+    },
+    {
+      "body": "农业、手工业和商业发展推动城市繁荣，一些地区出现夜市，货币使用和跨区域贸易也更加频繁。",
+      "id": "history-8",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "城市生活会随生产与交换方式一起改变。",
+      "title": "宋代城市为何更活跃",
+      "topicID": "history"
+    },
+    {
+      "body": "郑和船队远航不仅需要船舶，还依赖航海知识、物资组织、港口联系和国家动员。",
+      "id": "history-9",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "大型探索背后往往是一整套协作系统。",
+      "title": "郑和航行依赖系统能力",
+      "topicID": "history"
+    },
+    {
+      "body": "机器生产和工厂制度提高产量，也让劳动更多按照统一钟点组织。生产方式改变了工作地点与日常节奏。",
+      "id": "history-10",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "技术不仅改变工具，也改变生活秩序。",
+      "title": "工业革命重组了时间",
+      "topicID": "history"
+    },
+    {
+      "body": "铁路让人员和货物以更稳定的速度远距离移动，沿线城市、市场范围和时间标准也随之变化。",
+      "id": "history-11",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "交通提速会重新定义远近。",
+      "title": "铁路压缩了空间感",
+      "topicID": "history"
+    },
+    {
+      "body": "文字记录、器物、遗址和图像各有信息，也各有局限。研究者需要比较来源并理解记录者所处的环境。",
+      "id": "history-12",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "一条材料通常不足以讲完整个过去。",
+      "title": "历史结论来自多种证据",
+      "topicID": "history"
+    }
+  ]
+}
