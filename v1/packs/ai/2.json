@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "ai",
+  "version": 2,
+  "categoryID": "technology",
+  "title": "和 AI 相处",
+  "subtitle": "不神化，也不低估它",
+  "symbol": "sparkles",
+  "accentHex": "395F8C",
+  "softHex": "E1EBF5",
+  "cards": [
+    {
+      "body": "你输入一句话后，语言模型通常会依据训练中学到的统计模式，一个词元接一个词元地生成内容。它能写得流畅，却不等于先查过事实。",
+      "id": "ai-1",
+      "source": {
+        "organization": "NIST",
+        "title": "Generative Artificial Intelligence Profile",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+      },
+      "takeaway": "把 AI 当生成器，不要当权威答案库。",
+      "title": "AI 不是在“查答案”",
+      "topicID": "ai"
+    },
+    {
+      "body": "训练会用大量样本反复调整模型参数，往往耗时很久；当你发出问题，模型用这些参数现场生成回答，这个几秒钟的阶段叫推理。",
+      "id": "ai-2",
+      "source": {
+        "organization": "Google for Developers",
+        "title": "Machine Learning Glossary",
+        "url": "https://developers.google.com/machine-learning/glossary"
+      },
+      "takeaway": "训练像长期学习，推理像一次现场作答。",
+      "title": "训练很久，回答只用几秒",
+      "topicID": "ai"
+    },
+    {
+      "body": "生成式 AI 有时会把错误内容说得完整、自信，甚至附上并不存在的出处。NIST 称这种现象为“虚构”，它来自生成机制，而不是模型在故意撒谎。",
+      "id": "ai-3",
+      "source": {
+        "organization": "NIST",
+        "title": "Generative Artificial Intelligence Profile",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+      },
+      "takeaway": "越像真的重要结论，越值得回到原始来源核验。",
+      "title": "最危险的幻觉，往往很像真的",
+      "topicID": "ai"
+    },
+    {
+      "body": "与其寻找一句神奇咒语，不如像写 brief 一样交代目标、背景、限制和输出格式。信息越具体，模型越容易理解你真正要完成的任务。",
+      "id": "ai-4",
+      "source": {
+        "organization": "Google Cloud",
+        "title": "Overview of Prompting Strategies",
+        "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies"
+      },
+      "takeaway": "好提示词，本质上是一份清楚的任务说明。",
+      "title": "好提示词，像一份好 brief",
+      "topicID": "ai"
+    },
+    {
+      "body": "模型会从数据里学习规律，也会继承其中缺失、失衡和错误的部分。某类人或某种场景在数据里出现得太少，模型就可能在那里表现更差。",
+      "id": "ai-5",
+      "source": {
+        "organization": "NIST",
+        "title": "AI Risk Management Framework Playbook: Measure",
+        "url": "https://airc.nist.gov/airmf-resources/playbook/measure/"
+      },
+      "takeaway": "评估模型，也要追问它在哪些数据上学会了什么。",
+      "title": "模型也会继承数据的盲区",
+      "topicID": "ai"
+    },
+    {
+      "body": "模型给下一个词元分配的高概率，只表示它更符合上下文和已学模式；这不是对事实真假的信心评分，也不代表背后有可靠证据。",
+      "id": "ai-6",
+      "source": {
+        "organization": "NIST",
+        "title": "Generative Artificial Intelligence Profile",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+      },
+      "takeaway": "一句话越顺，不代表它越接近真相。",
+      "title": "高概率，不等于高可信",
+      "topicID": "ai"
+    },
+    {
+      "body": "生成时，系统可能从多个合理的后续内容中采样，所以同一句提示会得到不同措辞，偶尔也会得到不同结论。降低随机性只能减少变化，不能替代核验。",
+      "id": "ai-7",
+      "source": {
+        "organization": "Google Cloud",
+        "title": "Design Multimodal Prompts",
+        "url": "https://cloud.google.com/vertex-ai/generative-ai/docs/text/text-prompts"
+      },
+      "takeaway": "要稳定输出，就限定格式、提供样例并检查关键点。",
+      "title": "同一句提示，为何会答得不一样",
+      "topicID": "ai"
+    },
+    {
+      "body": "一个模型的平均准确率很高，也可能掩盖它对某些人群持续失准。公平性不能只看总分，还要按真实使用者和场景分别检查结果。",
+      "id": "ai-8",
+      "source": {
+        "organization": "NIST",
+        "title": "AI Risk Management and Human-AI Interaction",
+        "url": "https://airc.nist.gov/airmf-resources/airmf/appendices/app-c-ai-risk-management-and-human-ai-interaction/"
+      },
+      "takeaway": "平均表现良好，不代表每个人都被公平对待。",
+      "title": "平均分很好，也可能漏掉一群人",
+      "topicID": "ai"
+    },
+    {
+      "body": "在医疗、招聘或金融等高影响场景，人的角色不该只是替系统点确认。谁能质疑、纠正和推翻输出，以及谁承担最终责任，都需要提前定义。",
+      "id": "ai-9",
+      "source": {
+        "organization": "NIST",
+        "title": "AI Risk Management and Human-AI Interaction",
+        "url": "https://airc.nist.gov/airmf-resources/airmf/appendices/app-c-ai-risk-management-and-human-ai-interaction/"
+      },
+      "takeaway": "AI 可以建议，但不能替人承担后果。",
+      "title": "人在回路，不只是点一下确认",
+      "topicID": "ai"
+    },
+    {
+      "body": "通用排行榜测的是预设题目，不一定代表你的真实工作。更可靠的选择方式，是拿真实输入、失败案例和明确标准，在自己的场景里反复测试。",
+      "id": "ai-10",
+      "source": {
+        "organization": "NIST",
+        "title": "Practices for Automated Benchmark Evaluations of Language Models",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-2.ipd.pdf"
+      },
+      "takeaway": "排行榜告诉你谁擅长考试，不一定告诉你谁适合工作。",
+      "title": "榜单第一，不等于最适合你",
+      "topicID": "ai"
+    },
+    {
+      "body": "当 AI 阅读网页、邮件或文档时，里面可能藏着要求它改变任务的恶意文字。系统若分不清规则和资料，就可能被外部内容带偏。",
+      "id": "ai-11",
+      "source": {
+        "organization": "OWASP",
+        "title": "LLM Prompt Injection Prevention Cheat Sheet",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html"
+      },
+      "takeaway": "AI 看见的每段文字，不应该拥有同样的权限。",
+      "title": "网页里的文字，也能给 AI 下命令",
+      "topicID": "ai"
+    },
+    {
+      "body": "上线后的用户、数据和攻击方式都会变化，模型表现也可能随之漂移。持续监测、记录事故和保留停用方案，才是完整的风险管理。",
+      "id": "ai-12",
+      "source": {
+        "organization": "NIST",
+        "title": "AI Risk Management Framework Core",
+        "url": "https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"
+      },
+      "takeaway": "上线不是毕业，而是长期考试的开始。",
+      "title": "上线之后，AI 才开始真正考试",
+      "topicID": "ai"
+    }
+  ]
+}

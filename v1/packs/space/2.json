@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "space",
+  "version": 2,
+  "categoryID": "science",
+  "title": "抬头看宇宙",
+  "subtitle": "从眼前的天空，理解遥远尺度",
+  "symbol": "moon.stars.fill",
+  "accentHex": "675A91",
+  "softHex": "E9E4F3",
+  "cards": [
+    {
+      "body": "我们感觉地面静止，其实地球约每 24 小时自转一周。朝向太阳的一侧经历白天，背向太阳的一侧进入夜晚，于是太阳看起来每天东升西落。",
+      "id": "space-1",
+      "source": {
+        "organization": "NASA",
+        "title": "Facts About Earth",
+        "url": "https://science.nasa.gov/earth/facts/"
+      },
+      "takeaway": "天空看似在移动，真正转动的是我们脚下的地球。",
+      "title": "我们坐在一颗不停转动的星球上",
+      "topicID": "space"
+    },
+    {
+      "body": "月球不会自己发出可见光，月光是反射的阳光。月球始终有一半被太阳照亮，随着三者相对位置变化，我们看见的亮面比例形成月相。",
+      "id": "space-2",
+      "source": {
+        "organization": "NASA",
+        "title": "Moon Phases",
+        "url": "https://science.nasa.gov/moon/moon-phases/"
+      },
+      "takeaway": "月相不是月亮变形，而是我们看见的受光面在变化。",
+      "title": "月光，其实是借来的",
+      "topicID": "space"
+    },
+    {
+      "body": "“年”通常用来计时，但一光年表示光在真空中一年走过的距离，约 9.46 万亿千米。天文学家用它丈量恒星之间的巨大空间。",
+      "id": "space-3",
+      "source": {
+        "organization": "NASA",
+        "title": "Universe Glossary",
+        "url": "https://science.nasa.gov/universe/glossary/"
+      },
+      "takeaway": "光年借用了时间的名字，测量的却是距离。",
+      "title": "光年不是时间，为什么带着“年”",
+      "topicID": "space"
+    },
+    {
+      "body": "北半球冬天时，地球反而接近近日点。四季的关键不是远近，而是地轴约 23.4° 的倾斜，让各半球接收阳光的角度和时长随季节变化。",
+      "id": "space-4",
+      "source": {
+        "organization": "NASA",
+        "title": "Facts About Earth",
+        "url": "https://science.nasa.gov/earth/facts/"
+      },
+      "takeaway": "四季主要由地轴倾斜造成，不是简单的离太阳远近。",
+      "title": "冬天变冷，不是因为离太阳更远",
+      "topicID": "space"
+    },
+    {
+      "body": "空间站并没有逃离地球引力，它一直处在自由落体中；只是横向速度足够快，当它向下落时，弯曲的地表也不断离开，于是持续绕行。",
+      "id": "space-5",
+      "source": {
+        "organization": "NASA",
+        "title": "Basics of Space Flight: Gravity and Mechanics",
+        "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter3-4/"
+      },
+      "takeaway": "轨道不是摆脱引力，而是在下落中不断错过地面。",
+      "title": "空间站一直在掉，却总掉不到地面",
+      "topicID": "space"
+    },
+    {
+      "body": "太阳约占太阳系总质量的 99.8%，所有行星加起来也只剩很小一部分。如此集中的质量，使太阳的引力主导了整个系统的基本结构。",
+      "id": "space-6",
+      "source": {
+        "organization": "NASA",
+        "title": "Sun: Facts",
+        "url": "https://science.nasa.gov/sun/facts/"
+      },
+      "takeaway": "太阳系并不是成员均等的家庭，质量几乎都集中在太阳。",
+      "title": "太阳拿走了太阳系 99.8% 的质量",
+      "topicID": "space"
+    },
+    {
+      "body": "冥王星会绕太阳运行，也因自身引力接近球形；但它没有清除轨道附近的其他同类天体。按照国际天文学联合会的定义，它因此被归为矮行星。",
+      "id": "space-7",
+      "source": {
+        "organization": "NASA",
+        "title": "Pluto and Dwarf Planets",
+        "url": "https://science.nasa.gov/dwarf-planets/"
+      },
+      "takeaway": "行星分类不只看圆不圆、绕不绕太阳，还要看轨道环境。",
+      "title": "冥王星输在没有为轨道“清场”",
+      "topicID": "space"
+    },
+    {
+      "body": "月球会拉动整颗地球，但近月侧和远月侧受到的引力不同，海水因此重新分布并形成潮汐隆起。太阳、海岸和海底地形也会影响实际潮位。",
+      "id": "space-8",
+      "source": {
+        "organization": "NASA",
+        "title": "Tides",
+        "url": "https://science.nasa.gov/moon/tides/"
+      },
+      "takeaway": "潮汐的关键不是“有引力”，而是各处引力并不相同。",
+      "title": "月球怎样让海水每天起落",
+      "topicID": "space"
+    },
+    {
+      "body": "小块岩石还在太空时叫流星体；高速进入大气层产生亮迹时叫流星；若有残余真正落到地面，才叫陨石。同一物体会因位置改变名字。",
+      "id": "space-9",
+      "source": {
+        "organization": "NASA",
+        "title": "Meteors and Meteorites",
+        "url": "https://science.nasa.gov/solar-system/meteors-meteorites/"
+      },
+      "takeaway": "流星是发生在大气中的亮光现象，不是一颗星坠落。",
+      "title": "“流星”其实还没有落到地上",
+      "topicID": "space"
+    },
+    {
+      "body": "阳光抵达地球大约需要 8 分 20 秒。你此刻看见的太阳，是它八分多钟前的样子；距离越遥远，我们看到的宇宙就越古老。",
+      "id": "space-10",
+      "source": {
+        "organization": "NASA",
+        "title": "Facts About Earth",
+        "url": "https://science.nasa.gov/earth/facts/"
+      },
+      "takeaway": "望向太空不是实时直播，而是在接收过去发出的光。",
+      "title": "你看到的太阳，是 8 分钟前的",
+      "topicID": "space"
+    },
+    {
+      "body": "水星虽然离太阳最近，金星浓厚的二氧化碳大气却会强烈困住热量。失控的温室效应使金星成为太阳系表面最热的行星。",
+      "id": "space-11",
+      "source": {
+        "organization": "NASA",
+        "title": "Venus: Facts",
+        "url": "https://science.nasa.gov/venus/venus-facts/"
+      },
+      "takeaway": "离热源多远很重要，大气能不能留住热量也很重要。",
+      "title": "金星为什么比更靠近太阳的水星热",
+      "topicID": "space"
+    },
+    {
+      "body": "遥远行星很难在恒星强光旁直接成像。天文学家会寻找恒星周期性变暗，或被行星引力轻轻拉动的迹象，从影响反推行星存在。",
+      "id": "space-12",
+      "source": {
+        "organization": "NASA",
+        "title": "What’s a Transit?",
+        "url": "https://science.nasa.gov/exoplanets/whats-a-transit/"
+      },
+      "takeaway": "看不见目标时，也可以测量它对周围世界留下的影响。",
+      "title": "发现一颗行星，不一定要看见它",
+      "topicID": "space"
+    }
+  ]
+}

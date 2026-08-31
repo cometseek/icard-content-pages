@@ -1,62 +1,62 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 1,
-  "publishedAt": "2026-08-30T15:00:00Z",
+  "contentVersion": 2,
+  "publishedAt": "2026-08-31T14:47:42Z",
   "categoriesURL": "categories.json",
   "packs": [
     {
       "id": "ai",
-      "version": 1,
+      "version": 2,
       "categoryID": "technology",
-      "title": "人工智能",
+      "title": "和 AI 相处",
       "cardCount": 12,
-      "url": "packs/ai/1.json",
-      "checksum": "f9ef8b2184f89f0e331fa614576249b05ff9302b69d9a18f536649e1977457aa"
+      "url": "packs/ai/2.json",
+      "checksum": "c974f039b24ee944815d411262e62c5d62f0ec2cd8199afb2c97eeca3942669b"
     },
     {
       "id": "art",
-      "version": 1,
+      "version": 2,
       "categoryID": "aesthetics",
-      "title": "艺术入门",
+      "title": "如何看一幅画",
       "cardCount": 12,
-      "url": "packs/art/1.json",
-      "checksum": "a6aac647938de34354093e6f7c48d7c620add72385232ccd3d5363083328fc21"
+      "url": "packs/art/2.json",
+      "checksum": "bc155a5624e4e2b475abadea5dbefa8bf91c918dda86ffe17b586426be604ece"
     },
     {
       "id": "economics",
-      "version": 1,
+      "version": 2,
       "categoryID": "thinking",
-      "title": "经济常识",
+      "title": "钱与选择",
       "cardCount": 12,
-      "url": "packs/economics/1.json",
-      "checksum": "bc7f31e1ba95f025c9d6461a62ee240134664c3cca2a3f46f098656b1e8e7dff"
+      "url": "packs/economics/2.json",
+      "checksum": "2ef762c6d75f18e64b70033a02157b1c5abff2abb0086d6f12ab615a5f6fcaab"
     },
     {
       "id": "history",
-      "version": 1,
+      "version": 2,
       "categoryID": "world",
-      "title": "世界与历史",
+      "title": "历史的另一面",
       "cardCount": 12,
-      "url": "packs/history/1.json",
-      "checksum": "2c816a157588b3bb13dbde12999eedec6cb7609fab320ecb4a5c75e11deca041"
+      "url": "packs/history/2.json",
+      "checksum": "2f4659c8a2c526f8227ceb884adca9ded9628c86f4eb33c58d14873c3be139fa"
     },
     {
       "id": "science",
-      "version": 1,
+      "version": 2,
       "categoryID": "science",
-      "title": "生活科学",
+      "title": "日常里的科学",
       "cardCount": 12,
-      "url": "packs/science/1.json",
-      "checksum": "83f304ccdfe9da98a6059cb7e64d9728ce4f8bab17636988f1b55f908c8c9ee3"
+      "url": "packs/science/2.json",
+      "checksum": "b2a2999af29c0119a4f2ab7426b8346384009b780a4d48fcca93a7b565c15340"
     },
     {
       "id": "space",
-      "version": 1,
+      "version": 2,
       "categoryID": "science",
-      "title": "宇宙与地球",
+      "title": "抬头看宇宙",
       "cardCount": 12,
-      "url": "packs/space/1.json",
-      "checksum": "fc51b856848e858200418cf85ea7985dcc680cef0f4d2816f0ef9af920e51a6c"
+      "url": "packs/space/2.json",
+      "checksum": "d5a67c41e79ef5802a8447bf364a0825944fb555dc5c0c0b32d8e8ebbd13f17a"
     }
   ]
 }

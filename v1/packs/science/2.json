@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "science",
+  "version": 2,
+  "categoryID": "science",
+  "title": "日常里的科学",
+  "subtitle": "把熟悉的世界重新看一遍",
+  "symbol": "leaf.fill",
+  "accentHex": "58692D",
+  "softHex": "E8ECD9",
+  "cards": [
+    {
+      "body": "云里确实装着大量水，但水被分散成极小的水滴或冰晶，下降速度很慢；不断运动的空气又能托住它们。颗粒长大后，才更容易成为降水。",
+      "id": "science-1",
+      "source": {
+        "organization": "NOAA",
+        "title": "Precipitation",
+        "url": "https://www.noaa.gov/jetstream/atmosphere/precipitation"
+      },
+      "takeaway": "总重量很大，不代表每个微粒都能立刻落下。",
+      "title": "一朵云很重，为什么不掉下来",
+      "topicID": "science"
+    },
+    {
+      "body": "鲸终生生活在海里，却要定期浮到水面用肺呼吸。它们保持体温、生产幼崽并用乳汁喂养，因此属于哺乳动物，而不是鱼类。",
+      "id": "science-2",
+      "source": {
+        "organization": "NOAA Fisheries",
+        "title": "Marine Mammal Taxonomy",
+        "url": "https://www.fisheries.noaa.gov/national/outreach-and-education/marine-mammal-taxonomy"
+      },
+      "takeaway": "分类看的是一组身体特征，不只是住在哪里。",
+      "title": "鲸住在海里，却必须上来呼吸",
+      "topicID": "science"
+    },
+    {
+      "body": "把盆栽放到窗边，几天后茎会偏向光源。植物感受光线方向后，茎两侧生长速度出现差异，于是用缓慢弯曲完成“追光”。",
+      "id": "science-3",
+      "source": {
+        "organization": "NASA",
+        "title": "Can Plants Dance?",
+        "url": "https://science.nasa.gov/eclips/videos/can-plants-dance/"
+      },
+      "takeaway": "不会行走的生命，也能感知环境并改变方向。",
+      "title": "植物不走路，也会追着光",
+      "topicID": "science"
+    },
+    {
+      "body": "肥皂分子一端亲水，另一端更愿意靠近油脂。许多分子围住油污形成微小结构后，原本互不相溶的油和水就能一起被冲走。",
+      "id": "science-4",
+      "source": {
+        "organization": "American Chemical Society",
+        "title": "The Science of Getting Things Clean",
+        "url": "https://www.acs.org/content/dam/acsorg/education/outreach/celebrating-chemistry/2014-cced-celebrating-chemistry-english.pdf"
+      },
+      "takeaway": "肥皂能清洁，靠的是同时搭上水和油。",
+      "title": "肥皂分子，是一个“两面派”",
+      "topicID": "science"
+    },
+    {
+      "body": "海拔升高后，大气压通常降低，水分子更容易进入气态。比如海拔约 2200 米的黄石地区，纯水大约 93°C 就能沸腾。",
+      "id": "science-5",
+      "source": {
+        "organization": "U.S. Geological Survey",
+        "title": "How Hot Are Yellowstone’s Boiling Waters?",
+        "url": "https://www.usgs.gov/observatories/yvo/news/how-hot-are-yellowstones-boiling-waters-some-are-hotter-others"
+      },
+      "takeaway": "沸腾不是固定温度事件，它还取决于外界压力。",
+      "title": "海拔越高，水越早沸腾",
+      "topicID": "science"
+    },
+    {
+      "body": "多数物质凝固后会更紧密，水却很特别：结冰时分子形成较疏松的晶体结构，同样质量占据更大体积，密度反而低于液态水。",
+      "id": "science-6",
+      "source": {
+        "organization": "NOAA",
+        "title": "Sea Water",
+        "url": "https://www.noaa.gov/jetstream/ocean/sea-water"
+      },
+      "takeaway": "冰会浮，不是因为它轻，而是因为它的密度更低。",
+      "title": "大多数固体下沉，冰偏偏会浮",
+      "topicID": "science"
+    },
+    {
+      "body": "声音是通过气体、液体或固体传递的机械波。太空接近真空，没有足够介质把振动送到耳朵，所以电影里的飞船爆炸不会那样轰然作响。",
+      "id": "science-7",
+      "source": {
+        "organization": "NASA",
+        "title": "Anatomy of an Electromagnetic Wave",
+        "url": "https://science.nasa.gov/ems/02_anatomy/"
+      },
+      "takeaway": "太空能传来光，却不能像空气中那样传来声音。",
+      "title": "太空爆炸，真的一片寂静吗",
+      "topicID": "science"
+    },
+    {
+      "body": "同一房间里的金属和木头可能温度相同，金属却更快把热量从手指传走，于是皮肤降温更快。你感受到的，其实是热量传递速度。",
+      "id": "science-8",
+      "source": {
+        "organization": "University of Illinois",
+        "title": "Why Do Metals Feel Cold or Hot to the Touch?",
+        "url": "https://van.physics.illinois.edu/ask/listing/44029"
+      },
+      "takeaway": "触觉不是温度计，它也在感受热量流动。",
+      "title": "金属没有更冷，是它更会“抢热”",
+      "topicID": "science"
+    },
+    {
+      "body": "叶绿素更强地吸收红光和蓝光，对绿光吸收较少。没有被吸收的绿光更多地被反射或透过叶片，最后进入我们的眼睛。",
+      "id": "science-9",
+      "source": {
+        "organization": "USDA Agricultural Research Service",
+        "title": "Remote Sensing of Weeds in Agriculture",
+        "url": "https://www.ars.usda.gov/ARSUserFiles/57795/Thorp2004%20-%20RS%20weeds%20review.pdf"
+      },
+      "takeaway": "我们看见的颜色，常是物体没有留下的那部分光。",
+      "title": "叶子把绿光“退”给了我们",
+      "topicID": "science"
+    },
+    {
+      "body": "冬天空气干燥，摩擦产生的电荷不容易通过潮湿表面散去。脱毛衣时，不同材料间转移的电子突然放电，就会带来噼啪声和小火花。",
+      "id": "science-10",
+      "source": {
+        "organization": "Library of Congress",
+        "title": "How Does Static Electricity Work?",
+        "url": "https://www.loc.gov/everyday-mysteries/physics/item/how-does-static-electricity-work/"
+      },
+      "takeaway": "静电火花，是积累的电荷在寻找新的平衡。",
+      "title": "冬天脱毛衣，为何更容易噼啪",
+      "topicID": "science"
+    },
+    {
+      "body": "酵母利用面团里的糖进行发酵，产生二氧化碳。气体被面团结构困住，撑出许多小孔；烘烤把形状固定下来，就有了松软的内部。",
+      "id": "science-11",
+      "source": {
+        "organization": "USDA Agricultural Research Service",
+        "title": "Experimenting with Yeast",
+        "url": "https://aglab.ars.usda.gov/projects/experimenting-yeast"
+      },
+      "takeaway": "面包的蓬松，是微生物活动留下的形状。",
+      "title": "面包里的洞，是酵母吹出来的",
+      "topicID": "science"
+    },
+    {
+      "body": "刀切破苹果细胞后，原本分隔的酶、果肉成分和空气中的氧相遇，褐变反应开始。酸性液体或隔绝氧气，能让这场反应慢下来。",
+      "id": "science-12",
+      "source": {
+        "organization": "American Chemical Society",
+        "title": "Slowing Apple Browning",
+        "url": "https://www.acs.org/education/celebrating-chemistry-editions/2021-ncw/slowing-apple-browning.html"
+      },
+      "takeaway": "褐色不是“脏了”，而是切面启动了一连串化学反应。",
+      "title": "苹果切开后的褐色倒计时",
+      "topicID": "science"
+    }
+  ]
+}

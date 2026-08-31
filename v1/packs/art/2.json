@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "art",
+  "version": 2,
+  "categoryID": "aesthetics",
+  "title": "如何看一幅画",
+  "subtitle": "从第一眼，走进作品的选择",
+  "symbol": "paintpalette.fill",
+  "accentHex": "9C5145",
+  "softHex": "F3E2DE",
+  "cards": [
+    {
+      "body": "主体放在哪里、线条往哪走、哪里最亮，都会悄悄安排观看顺序。所谓构图，就是创作者为你的视线设计的一条路线。",
+      "id": "art-1",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Term: Composition",
+        "url": "https://www.tate.org.uk/art/art-terms/c/composition"
+      },
+      "takeaway": "看画的第一步：留意第一眼落在哪里，然后追踪视线。",
+      "title": "一幅画，怎样决定你的第一眼",
+      "topicID": "art"
+    },
+    {
+      "body": "画布明明是平的，亮面、暗面和投影却能让大脑读出转折与厚度。光影不仅塑造体积，也在决定画面是安静还是戏剧化。",
+      "id": "art-2",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Term: Chiaroscuro",
+        "url": "https://www.tate.org.uk/art/art-terms/c/chiaroscuro"
+      },
+      "takeaway": "看见光从哪里来，就更容易看懂形体和情绪。",
+      "title": "画布是平的，人物为何有体积",
+      "topicID": "art"
+    },
+    {
+      "body": "红与绿、蓝与橙等互补色相邻时，会把彼此衬得更鲜明；混在一起并降低饱和度后，却可能趋向灰褐。颜色的力量常来自关系。",
+      "id": "art-3",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Term: Complementary Colours",
+        "url": "https://www.tate.org.uk/art/art-terms/c/complementary-colours"
+      },
+      "takeaway": "不要只问“这是什么颜色”，还要看它旁边是谁。",
+      "title": "红和绿放在一起，会发生什么",
+      "topicID": "art"
+    },
+    {
+      "body": "主体之外的区域并不是剩下的边角，它有一个名字：负空间。它能让主体呼吸，也能组成方向、节奏，甚至另一幅隐藏图形。",
+      "id": "art-4",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "空白不是没画，它也是构图的一部分。",
+      "title": "空白也在说话",
+      "topicID": "art"
+    },
+    {
+      "body": "画里的道路和屋檐本来不会真的相交，线性透视却让它们朝消失点收拢，再把远处物体画小，于是平面像被推开了纵深。",
+      "id": "art-5",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Term: Perspective",
+        "url": "https://www.tate.org.uk/art/art-terms/p/perspective"
+      },
+      "takeaway": "消失点是一种空间语言，而不是世界唯一的画法。",
+      "title": "消失点，是画家搭出的舞台",
+      "topicID": "art"
+    },
+    {
+      "body": "形状、颜色或线条反复出现，会像音乐里的拍子一样推动视线；某一次突然改变，又会像重音一样抓住注意力。",
+      "id": "art-6",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "画面有节奏，是因为重复里藏着变化。",
+      "title": "没有声音的画面，也有节拍",
+      "topicID": "art"
+    },
+    {
+      "body": "厚重颜料、粗糙画布或细密笔触，会让眼睛预先想象触感。即使隔着屏幕，你仍可能觉得某块表面潮湿、坚硬或柔软。",
+      "id": "art-7",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "观看不只用眼睛，视觉也会调动身体记忆。",
+      "title": "你没摸到，却觉得它很粗糙",
+      "topicID": "art"
+    },
+    {
+      "body": "一把日常椅子若被放大到三米高，就不再只是家具：你会仰视它、绕开它，甚至感到被压迫。尺度改变了观者与作品的身体关系。",
+      "id": "art-8",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "尺寸一变，熟悉事物也会换一种身份。",
+      "title": "一把椅子变成三米高之后",
+      "topicID": "art"
+    },
+    {
+      "body": "抽象作品可能从真实对象出发，把它简化、拆解或重组；也可能直接研究颜色、形状、材料和动作。看不出对象，不等于没有选择。",
+      "id": "art-9",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Term: Abstract Art",
+        "url": "https://www.tate.org.uk/art/art-terms/a/abstract-art"
+      },
+      "takeaway": "面对抽象画，先看颜色、力量、方向和节奏。",
+      "title": "抽象画不是“随便画”",
+      "topicID": "art"
+    },
+    {
+      "body": "油画可以层层覆盖，木刻留下刀痕，摄影截取瞬间，数字图像易于复制。选择媒介，也是在选择作品能说什么、怎样被观看。",
+      "id": "art-10",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Term: Medium",
+        "url": "https://www.tate.org.uk/art/art-terms/m/medium"
+      },
+      "takeaway": "材料不是内容的包装，它本身就在表达。",
+      "title": "换一种材料，作品就换了声音",
+      "topicID": "art"
+    },
+    {
+      "body": "画面两边不必像镜子：一个大而暗的形状，也可能与几个小而亮的形状互相制衡。视觉重量相当，画面就能保持稳定。",
+      "id": "art-11",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "平衡不是两边一样，而是两边都站得住。",
+      "title": "不对称，为什么仍然稳定",
+      "topicID": "art"
+    },
+    {
+      "body": "今天挂在白墙上的作品，最初也许用于祭祀、纪念、宣传或私人生活。地点、用途和观众一变，同一图像就可能产生不同意义。",
+      "id": "art-12",
+      "source": {
+        "organization": "Tate",
+        "title": "Art Terms and Learning Resources",
+        "url": "https://www.tate.org.uk/art/art-terms"
+      },
+      "takeaway": "理解一件作品，也要问它当初为谁、在哪里出现。",
+      "title": "离开美术馆，它原本在哪里",
+      "topicID": "art"
+    }
+  ]
+}

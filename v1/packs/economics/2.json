@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "economics",
+  "version": 2,
+  "categoryID": "thinking",
+  "title": "钱与选择",
+  "subtitle": "看懂日常决定背后的成本",
+  "symbol": "chart.line.uptrend.xyaxis",
+  "accentHex": "366E64",
+  "softHex": "DDEDE8",
+  "cards": [
+    {
+      "body": "一场免费活动若占用两小时，你放弃的休息、陪伴或工作机会仍然有价值。经济学把被放弃选项中价值最高的那个，称为机会成本。",
+      "id": "economics-1",
+      "source": {
+        "organization": "Federal Reserve Bank of St. Louis",
+        "title": "Opportunity Cost",
+        "url": "https://www.stlouisfed.org/education/economic-lowdown-podcast-series/episode-1-opportunity-cost"
+      },
+      "takeaway": "判断一件事贵不贵，也要看你因此放弃了什么。",
+      "title": "“免费”的两小时，也有成本",
+      "topicID": "economics"
+    },
+    {
+      "body": "账户里的数字没有减少，同样一百元能买到的东西却变少了——这就是通货膨胀侵蚀购买力。比较多年后的金额，不能只看数字大小。",
+      "id": "economics-2",
+      "source": {
+        "organization": "Investor.gov",
+        "title": "Risk and Return",
+        "url": "https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/risk-and-return"
+      },
+      "takeaway": "钱的价值，不只是面额，还取决于它能买到什么。",
+      "title": "钱没变少，为什么却买得更少",
+      "topicID": "economics"
+    },
+    {
+      "body": "复利不只让本金产生收益，也让之前的收益继续参与增长。利率当然重要，但在相同条件下，越早开始、持续越久，滚动次数越多。",
+      "id": "economics-3",
+      "source": {
+        "organization": "Investor.gov",
+        "title": "Introduction to Investing",
+        "url": "https://www.investor.gov/introduction-investing"
+      },
+      "takeaway": "复利既会放大长期积累，也会放大长期负债。",
+      "title": "复利最在意的，不只是利率",
+      "topicID": "economics"
+    },
+    {
+      "body": "持有很多项资产，不代表真正分散：如果它们都受同一种因素影响，仍可能一起下跌。分散需要考虑资产之间的差异，而不只是数量。",
+      "id": "economics-4",
+      "source": {
+        "organization": "Investor.gov",
+        "title": "Asset Allocation and Diversification",
+        "url": "https://www.investor.gov/introduction-investing/getting-started/asset-allocation"
+      },
+      "takeaway": "篮子多不多不重要，重要的是它们会不会一起摔。",
+      "title": "买了很多，也可能没有分散",
+      "topicID": "economics"
+    },
+    {
+      "body": "账户一年增加了 5%，如果同期物价上涨得更快，你能买到的东西反而可能减少。名义收益是数字变化，实际收益更接近购买力变化。",
+      "id": "economics-5",
+      "source": {
+        "organization": "Investor.gov",
+        "title": "Risk and Return",
+        "url": "https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/risk-and-return"
+      },
+      "takeaway": "收益率要和通胀放在一起看，才接近真实结果。",
+      "title": "赚了 5%，购买力也可能下降",
+      "topicID": "economics"
+    },
+    {
+      "body": "一项资产账面价值很高，却可能找不到买家，或必须降价才能迅速卖出。流动性衡量的，就是它能否及时、低成本地变成可用资金。",
+      "id": "economics-6",
+      "source": {
+        "organization": "Investor.gov",
+        "title": "What Are Corporate Bonds?",
+        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/what-are"
+      },
+      "takeaway": "资产值多少钱，与现在能不能用，是两个问题。",
+      "title": "账面很值钱，不等于马上能用",
+      "topicID": "economics"
+    },
+    {
+      "body": "把钱存出去时，利率像资金的回报；把钱借进来时，利率又成了资金的价格。期限、风险和市场条件都会改变这个数字。",
+      "id": "economics-7",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "金融消费者教育资料",
+        "url": "https://www.pbc.gov.cn/"
+      },
+      "takeaway": "看到利率，先问自己站在收钱还是付钱的一边。",
+      "title": "利率：一边是回报，一边是价格",
+      "topicID": "economics"
+    },
+    {
+      "body": "个人信用报告记录的是借贷、还款等历史信息。它会影响未来获得金融服务的条件，但它描述的是过去的金融行为，不是对一个人人品的终身判决。",
+      "id": "economics-8",
+      "source": {
+        "organization": "中国人民银行",
+        "title": "征信相关金融常识",
+        "url": "https://www.pbc.gov.cn/eportal/fileDir/history_file/files/att_18779_8.pdf"
+      },
+      "takeaway": "信用报告是一份行为记录，不是一张品格标签。",
+      "title": "信用报告记的是过去，不是人品",
+      "topicID": "economics"
+    },
+    {
+      "body": "预算不是把所有快乐都删掉，而是在花钱之前，先给必要支出、储蓄和真正重视的目标留出位置。它让优先级替你减少临时纠结。",
+      "id": "economics-9",
+      "source": {
+        "organization": "Consumer Financial Protection Bureau",
+        "title": "Budgeting: How to Create a Budget and Stick with It",
+        "url": "https://www.consumerfinance.gov/archive/blog/budgeting-how-to-create-a-budget-and-stick-with-it/"
+      },
+      "takeaway": "预算的核心不是少花，而是先把钱给重要的事。",
+      "title": "预算不是省钱，是提前排序",
+      "topicID": "economics"
+    },
+    {
+      "body": "维修、医疗支出或收入中断不会先预约。留一笔安全、易取用的应急资金，能减少临时高息借款或低价卖出资产的可能。",
+      "id": "economics-10",
+      "source": {
+        "organization": "Consumer Financial Protection Bureau",
+        "title": "An Essential Guide to Building an Emergency Fund",
+        "url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/"
+      },
+      "takeaway": "应急金买到的不是收益，而是从容选择的时间。",
+      "title": "应急金买到的，其实是时间",
+      "topicID": "economics"
+    },
+    {
+      "body": "回报越高，通常意味着需要承担更多不确定性。若一项宣传反复强调“稳赚”“保本高息”，却不解释钱从哪里赚、可能怎样亏，信息就是不完整的。",
+      "id": "economics-11",
+      "source": {
+        "organization": "国家金融监督管理总局",
+        "title": "关于防范虚假网络投资理财类诈骗的风险提示",
+        "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1142025&generaltype=0&itemId=4100"
+      },
+      "takeaway": "只讲收益、不讲风险，本身就是风险信号。",
+      "title": "只讲收益的人，省略了最重要的一半",
+      "topicID": "economics"
+    },
+    {
+      "body": "冒充机构、制造紧迫感、发陌生链接或要求转入私人账户，都是常见危险信号。不要顺着对方给的联系方式核实，应自己找到官方网站或热线。",
+      "id": "economics-12",
+      "source": {
+        "organization": "国家金融监督管理总局",
+        "title": "关于防范虚假网络投资理财类诈骗的风险提示",
+        "url": "https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1142025&generaltype=0&itemId=4100"
+      },
+      "takeaway": "真正紧急的不是马上转账，而是先独立核实。",
+      "title": "越催你转账，越要慢下来",
+      "topicID": "economics"
+    }
+  ]
+}

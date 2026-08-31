@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "history",
+  "version": 2,
+  "categoryID": "world",
+  "title": "历史的另一面",
+  "subtitle": "从一个细节，看见时代如何运转",
+  "symbol": "building.columns.fill",
+  "accentHex": "945038",
+  "softHex": "F2E4DC",
+  "cards": [
+    {
+      "body": "秦完成统一后，还推行统一文字、货币和度量衡等制度。地图上的边界是一种统一，让不同地区能按同一套规则交流，则是另一种统一。",
+      "id": "history-1",
+      "source": {
+        "organization": "UNESCO World Heritage Centre",
+        "title": "Mausoleum of the First Qin Emperor",
+        "url": "https://whc.unesco.org/en/list/441"
+      },
+      "takeaway": "共同标准能把遥远地区连接成更紧密的整体。",
+      "title": "秦统一的，远不止地图",
+      "topicID": "history"
+    },
+    {
+      "body": "“丝绸之路”其实是一张不断变化的陆海网络，很少有人从头走到尾。货物常被不同商人分段转手，知识、宗教和技术也随人群流动。",
+      "id": "history-2",
+      "source": {
+        "organization": "UNESCO",
+        "title": "About the Silk Roads",
+        "url": "https://www.unesco.org/en/silk-roads/about-silk-roads"
+      },
+      "takeaway": "真正连接文明的，往往不是一条路，而是一张网络。",
+      "title": "丝绸之路，从来不是一条路",
+      "topicID": "history"
+    },
+    {
+      "body": "大运河连接多个水系，长期承担漕粮和战略物资运输。它不只让船走得更远，也让国家能调动物资，并让沿线城市获得新的位置。",
+      "id": "history-3",
+      "source": {
+        "organization": "UNESCO World Heritage Centre",
+        "title": "The Grand Canal",
+        "url": "https://whc.unesco.org/en/list/1443"
+      },
+      "takeaway": "基础设施一旦改变流动方向，也会重画城市与权力地图。",
+      "title": "一条运河，怎样给帝国运粮",
+      "topicID": "history"
+    },
+    {
+      "body": "活字可以拆开、重排、重复使用，听起来理应取代雕版；但汉字数量、排版成本和不同印量，让两种技术长期并存。新技术并不总会立刻胜出。",
+      "id": "history-4",
+      "source": {
+        "organization": "The Metropolitan Museum of Art",
+        "title": "The Arts of Korea: A Resource for Educators",
+        "url": "https://www.metmuseum.org/-/media/files/learn/for-educators/publications-for-educators/korea.pdf"
+      },
+      "takeaway": "技术优不优，要放进真实成本和使用场景里判断。",
+      "title": "活字印刷为何没立刻淘汰雕版",
+      "topicID": "history"
+    },
+    {
+      "body": "在郡县制下，地方主要官员由中央任免，而不是把统治权世代分给诸侯。这让地方官更像一个可调动的职位，也加强了中央的直接管理。",
+      "id": "history-5",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "官位是职位还是家产，会塑造完全不同的权力结构。",
+      "title": "地方官不再世袭，意味着什么",
+      "topicID": "history"
+    },
+    {
+      "body": "与成捆的简牍相比，纸更轻、更易书写和携带。媒介成本下降后，同样一段文字能被带得更远、复制得更多，知识传播的边界也随之扩大。",
+      "id": "history-6",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "知识能走多远，也取决于承载它的东西有多轻。",
+      "title": "纸张变轻，知识才走得更远",
+      "topicID": "history"
+    },
+    {
+      "body": "科举让学习和考试成为进入官僚体系的重要路径，扩大了选官来源；但教育资源、身份和性别限制仍然存在。它打开了一道门，却不是所有门。",
+      "id": "history-7",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "扩大机会不等于实现平等，进步也有时代边界。",
+      "title": "科举打开了一道门，但不是所有门",
+      "topicID": "history"
+    },
+    {
+      "body": "宋代一些城市的商业活动突破了严格的时间和空间限制，夜市、酒楼和瓦舍让生活延续到夜晚。城市节奏并不是现代才突然出现。",
+      "id": "history-8",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "商业边界一放宽，城市会长出新的时间表。",
+      "title": "一千年前的城市，也有夜生活",
+      "topicID": "history"
+    },
+    {
+      "body": "远航需要的不只是一批大船，还包括航海知识、淡水与粮食补给、翻译、港口联系和大规模组织。壮举背后，往往是一套看不见的系统。",
+      "id": "history-9",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "规模越大的探索，越依赖持续协作而不只是个人勇气。",
+      "title": "郑和下西洋，靠的不只是一艘大船",
+      "topicID": "history"
+    },
+    {
+      "body": "工厂把机器、工人和流程集中到同一地点，劳动开始更多服从统一钟点，而不只是日出日落或任务完成。工业革命也重写了日常时间。",
+      "id": "history-10",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "技术改变的不只是产量，也会改变人怎样安排一天。",
+      "title": "工厂把人带进了“钟表时间”",
+      "topicID": "history"
+    },
+    {
+      "body": "铁路让长距离移动更快、更准时，也让各地不同的地方时变得麻烦。列车时刻表推动时间标准化，交通开始重新定义“准时”与“远近”。",
+      "id": "history-11",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "交通工具改变空间，也会反过来统一时间。",
+      "title": "铁路不只缩短路程，也改变时间",
+      "topicID": "history"
+    },
+    {
+      "body": "史书可能带着记录者的立场，器物没有文字说明，遗址也只留下残片。研究者要让不同证据互相印证，才能拼出更可靠的过去。",
+      "id": "history-12",
+      "source": {
+        "organization": "人民教育出版社",
+        "title": "义务教育教科书《中国历史》",
+        "url": "https://www.pep.com.cn/"
+      },
+      "takeaway": "历史不是背熟一个故事，而是比较证据后的解释。",
+      "title": "历史不是故事，是证据的拼图",
+      "topicID": "history"
+    }
+  ]
+}
