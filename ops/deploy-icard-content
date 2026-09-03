@@ -1,0 +1,147 @@
+#!/usr/bin/env bash
+
+set -Eeuo pipefail
+umask 027
+
+readonly DEPLOY_USER="icard-content-deploy"
+readonly INCOMING_ROOT="/home/$DEPLOY_USER/incoming"
+readonly APP_ROOT="/var/www/icard-content"
+readonly PUBLIC_MANIFEST="https://cometseek.com/icard-content/v1/manifest.json"
+readonly LOCK_FILE="/run/lock/icard-content-deploy.lock"
+readonly MAX_ARCHIVE_BYTES="$((10 * 1024 * 1024))"
+
+fail() {
+  echo "部署失败：$*" >&2
+  exit 1
+}
+
+if [[ $# -ne 1 ]]; then
+  fail "用法：deploy-icard-content <40 位 commit SHA>"
+fi
+
+readonly COMMIT_SHA="$1"
+[[ "$COMMIT_SHA" =~ ^[0-9a-f]{40}$ ]] || fail "commit SHA 格式不正确"
+
+readonly ARCHIVE="$INCOMING_ROOT/$COMMIT_SHA.tar.gz"
+[[ -f "$ARCHIVE" && ! -L "$ARCHIVE" ]] || fail "发布包不存在或类型不安全"
+[[ "$(stat -c '%U' "$ARCHIVE")" == "$DEPLOY_USER" ]] || fail "发布包所有者不正确"
+
+archive_size="$(stat -c '%s' "$ARCHIVE")"
+(( archive_size > 0 && archive_size <= MAX_ARCHIVE_BYTES )) || fail "发布包大小不合法"
+
+exec 9>"$LOCK_FILE"
+flock -n 9 || fail "已有一次部署正在执行"
+
+python3 - "$ARCHIVE" <<'PY'
+import pathlib
+import sys
+import tarfile
+
+archive = sys.argv[1]
+root_files = {"index.html", "privacy.html", "support.html"}
+with tarfile.open(archive, "r:gz") as bundle:
+    members = bundle.getmembers()
+    if not members:
+        raise SystemExit("发布包为空")
+    for member in members:
+        path = pathlib.PurePosixPath(member.name)
+        if path.is_absolute() or ".." in path.parts:
+            raise SystemExit(f"发布包包含越界路径：{member.name}")
+        if member.issym() or member.islnk() or member.isdev() or member.isfifo():
+            raise SystemExit(f"发布包包含不允许的文件类型：{member.name}")
+        if member.isdir():
+            if not path.parts or path.parts[0] != "v1":
+                raise SystemExit(f"发布包包含未知目录：{member.name}")
+        elif member.name not in root_files and not (
+            path.parts and path.parts[0] == "v1" and path.suffix == ".json"
+        ):
+            raise SystemExit(f"发布包包含未知文件：{member.name}")
+PY
+
+release_id="$(date -u +%Y%m%d-%H%M%S)-${COMMIT_SHA:0:12}"
+readonly release_id
+readonly RELEASE_DIR="$APP_ROOT/releases/$release_id"
+readonly NEXT_LINK="$APP_ROOT/.current-$release_id"
+
+previous_release=""
+if [[ -L "$APP_ROOT/current" ]]; then
+  previous_release="$(readlink -f "$APP_ROOT/current")"
+  case "$previous_release" in
+    "$APP_ROOT"/releases/*) ;;
+    *) fail "当前版本不在 releases 目录中" ;;
+  esac
+elif [[ -e "$APP_ROOT/current" ]]; then
+  fail "current 必须是版本目录的符号链接"
+fi
+
+[[ ! -e "$RELEASE_DIR" ]] || fail "版本目录已存在"
+install -d -o root -g www-data -m 0755 "$RELEASE_DIR"
+
+cleanup() {
+  rm -f -- "$ARCHIVE"
+}
+trap cleanup EXIT
+
+tar --extract --gzip --file "$ARCHIVE" --directory "$RELEASE_DIR" \
+  --no-same-owner --no-same-permissions
+find "$RELEASE_DIR" -type d -exec chmod 0755 {} +
+find "$RELEASE_DIR" -type f -exec chmod 0644 {} +
+chown -R root:www-data "$RELEASE_DIR"
+
+python3 - "$RELEASE_DIR/v1" <<'PY'
+import hashlib
+import json
+import pathlib
+import sys
+
+root = pathlib.Path(sys.argv[1]).resolve()
+manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+if manifest.get("schemaVersion") != 1 or not manifest.get("packs"):
+    raise SystemExit("manifest 无效")
+
+seen = set()
+for entry in manifest["packs"]:
+    pack_id = entry.get("id")
+    if not pack_id or pack_id in seen:
+        raise SystemExit(f"卡包 id 无效或重复：{pack_id}")
+    seen.add(pack_id)
+    pack_path = (root / entry["url"]).resolve()
+    if root not in pack_path.parents:
+        raise SystemExit(f"卡包路径越界：{entry['url']}")
+    data = pack_path.read_bytes()
+    if hashlib.sha256(data).hexdigest() != entry["checksum"].lower():
+        raise SystemExit(f"卡包 checksum 不一致：{pack_id}")
+    pack = json.loads(data)
+    if pack.get("id") != pack_id or pack.get("version") != entry.get("version"):
+        raise SystemExit(f"卡包元数据不一致：{pack_id}")
+    if len(pack.get("cards", [])) != entry.get("cardCount"):
+        raise SystemExit(f"卡片数量不一致：{pack_id}")
+PY
+
+rollback() {
+  local rollback_link="$APP_ROOT/.rollback-$release_id"
+  rm -f -- "$rollback_link"
+  if [[ -n "$previous_release" ]]; then
+    ln -s "$previous_release" "$rollback_link"
+    mv -Tf "$rollback_link" "$APP_ROOT/current"
+  else
+    rm -f -- "$APP_ROOT/current"
+  fi
+}
+
+ln -s "$RELEASE_DIR" "$NEXT_LINK"
+mv -Tf "$NEXT_LINK" "$APP_ROOT/current"
+
+downloaded_manifest="$(mktemp)"
+if ! curl -fsS --retry 3 --retry-delay 2 --max-time 15 \
+  --resolve "cometseek.com:443:127.0.0.1" \
+  "$PUBLIC_MANIFEST" >"$downloaded_manifest" || \
+  ! cmp -s "$RELEASE_DIR/v1/manifest.json" "$downloaded_manifest"; then
+  rm -f -- "$downloaded_manifest"
+  rollback
+  fail "公网校验失败，已回滚"
+fi
+rm -f -- "$downloaded_manifest"
+
+echo "部署完成：$RELEASE_DIR"
+echo "上一版本：${previous_release:-无（首次部署）}"

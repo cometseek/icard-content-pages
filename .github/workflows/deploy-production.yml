@@ -1,0 +1,79 @@
+name: Deploy production
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: icard-content-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Validate and deploy
+    runs-on: ubuntu-latest
+    environment: production
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out content
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+
+      - name: Validate content
+        run: node scripts/verify-content.mjs
+
+      - name: Configure deploy SSH
+        env:
+          DEPLOY_KNOWN_HOSTS: ${{ vars.DEPLOY_KNOWN_HOSTS }}
+          DEPLOY_SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}
+        run: |
+          set -Eeuo pipefail
+          install -d -m 0700 "$HOME/.ssh"
+          install -m 0600 /dev/null "$HOME/.ssh/deploy_key"
+          printf '%s\n' "$DEPLOY_SSH_PRIVATE_KEY" > "$HOME/.ssh/deploy_key"
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+
+      - name: Upload and activate release
+        env:
+          DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ vars.DEPLOY_USER }}
+        run: |
+          set -Eeuo pipefail
+          archive="/tmp/${GITHUB_SHA}.tar.gz"
+          git archive --format=tar.gz --output="$archive" HEAD \
+            index.html privacy.html support.html v1
+
+          ssh_options=(
+            -i "$HOME/.ssh/deploy_key"
+            -o BatchMode=yes
+            -o IdentitiesOnly=yes
+            -o StrictHostKeyChecking=yes
+            -o UserKnownHostsFile="$HOME/.ssh/known_hosts"
+          )
+
+          scp "${ssh_options[@]}" \
+            "$archive" \
+            "$DEPLOY_USER@$DEPLOY_HOST:incoming/${GITHUB_SHA}.tar.gz"
+
+          printf -v remote_command 'sudo -n %q %q' \
+            /usr/local/sbin/deploy-icard-content "$GITHUB_SHA"
+          # The validated command is intentionally assembled on the runner.
+          # shellcheck disable=SC2029
+          ssh "${ssh_options[@]}" "$DEPLOY_USER@$DEPLOY_HOST" "$remote_command"
+
+      - name: Verify public content
+        run: |
+          set -Eeuo pipefail
+          curl -fsS --retry 5 --retry-delay 2 --max-time 15 \
+            https://cometseek.com/icard-content/v1/manifest.json \
+            | cmp - v1/manifest.json

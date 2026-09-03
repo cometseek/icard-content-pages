@@ -17,4 +17,5 @@ node scripts/verify-content.mjs
 
 服务器使用 `/var/www/icard-content/releases/<release>` 保存每次发布，
 `/var/www/icard-content/current` 原子指向当前版本。Nginx 配置片段保存在
-`ops/nginx-location.conf`。
+`ops/nginx-location.conf`。`main` 分支更新后，GitHub Actions 会先校验内容，
+再通过受限部署账号上传并原子切换版本；公网校验失败时服务器会自动回滚。
