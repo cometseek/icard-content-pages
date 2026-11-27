@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write
 
 concurrency:
   group: icard-content-production
@@ -23,6 +24,8 @@ jobs:
     steps:
       - name: Check out content
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
 
       - name: Set up Node.js
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
@@ -31,6 +34,15 @@ jobs:
 
       - name: Validate content
         run: node scripts/verify-content.mjs
+
+      - name: Join the production tailnet
+        uses: tailscale/github-action@780049a30b6ff5c378a9e7b389d15ece7a204888 # v4.1.3
+        with:
+          oauth-client-id: ${{ vars.TS_OAUTH_CLIENT_ID }}
+          audience: ${{ vars.TS_AUDIENCE }}
+          tags: tag:icard-content-deploy
+          ping: ${{ vars.DEPLOY_HOST }}
+          version: 1.102.2
 
       - name: Configure deploy SSH
         env:
@@ -42,6 +54,7 @@ jobs:
           install -m 0600 /dev/null "$HOME/.ssh/deploy_key"
           printf '%s\n' "$DEPLOY_SSH_PRIVATE_KEY" > "$HOME/.ssh/deploy_key"
           printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+          chmod 0600 "$HOME/.ssh/known_hosts"
 
       - name: Upload and activate release
         env:
@@ -52,6 +65,7 @@ jobs:
           archive="/tmp/${GITHUB_SHA}.tar.gz"
           git archive --format=tar.gz --output="$archive" HEAD \
             index.html privacy.html support.html v1
+          checksum="$(sha256sum "$archive" | awk '{print $1}')"
 
           ssh_options=(
             -i "$HOME/.ssh/deploy_key"
@@ -61,15 +75,9 @@ jobs:
             -o UserKnownHostsFile="$HOME/.ssh/known_hosts"
           )
 
-          scp "${ssh_options[@]}" \
-            "$archive" \
-            "$DEPLOY_USER@$DEPLOY_HOST:incoming/${GITHUB_SHA}.tar.gz"
-
-          printf -v remote_command 'sudo -n %q %q' \
-            /usr/local/sbin/deploy-icard-content "$GITHUB_SHA"
-          # The validated command is intentionally assembled on the runner.
-          # shellcheck disable=SC2029
-          ssh "${ssh_options[@]}" "$DEPLOY_USER@$DEPLOY_HOST" "$remote_command"
+          ssh "${ssh_options[@]}" "$DEPLOY_USER@$DEPLOY_HOST" \
+            "upload ${GITHUB_SHA} ${checksum}" < "$archive"
+          ssh "${ssh_options[@]}" "$DEPLOY_USER@$DEPLOY_HOST" status
 
       - name: Verify public content
         run: |
